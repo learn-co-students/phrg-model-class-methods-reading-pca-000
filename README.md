@@ -355,4 +355,7 @@ the big takeaway is this: by considering the separation of concerns,
 sticking to MVC, and using class methods on our models, we were ultimately
 able to implement those features in a clean, well-organized way.
 
+## Does this need an update?
+Please open a [GitHub issue](https://github.com/learn-co-curriculum/phrg-model-class-methods-reading/issues) or [pull-request](https://github.com/learn-co-curriculum/phrg-model-class-methods-reading/pulls). Provide a detailed description that explains the issue you have found or the change you are proposing. Then "@" mention your instructor on the issue or pull-request, and send them a link via Connect.
+
 <p data-visibility='hidden'>PHRG Model Class Methods</p>
