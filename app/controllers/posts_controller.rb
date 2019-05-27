@@ -1,8 +1,21 @@
 # frozen_string_literal: true
 
 class PostsController < ApplicationController
+  helper_method :params
   def index
-    @posts = Post.all
+    @authors = Author.all
+    @posts =
+    if !params[:author].blank?
+      Post.by_author(params[:author])
+    elsif !params[:date].blank?
+      if params[:date] == "Today"
+        Post.from_today
+      else
+        Post.old_news
+      end
+    else
+      Post.all
+    end
   end
 
   def show
